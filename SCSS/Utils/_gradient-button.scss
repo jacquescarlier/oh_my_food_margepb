@@ -1,0 +1,6 @@
+@mixin bg-lighten{
+    background: lighten(linear-gradient(to bottom, lighten($couleur-primaire, 0%), lighten($couleur-secondaire, 100%)))
+}
+@mixin bg-linear-gradient {
+    background: linear-gradient(to bottom, $couleur-primaire 0% ,  $couleur-secondaire 100%);;
+}

@@ -1,0 +1,483 @@
+@charset "UTF-8";
+/* éléments texte */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* éléments texte */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar p {
+  font-family: shrikhand;
+  font-size: 30px;
+  padding: 14px 0px 5px 0px;
+}
+.navbar a {
+  position: absolute;
+  left: 23px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.location p {
+  font-weight: 500;
+  padding: 16px 0px 15px 0px;
+  margin: 0;
+}
+.location i {
+  color: #353535;
+}
+
+/* Explorer restaurants */
+.explorer-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+.explorer-restaurants h2 {
+  margin-top: 39px;
+  margin-bottom: 0;
+  line-height: 28px;
+  width: 70%;
+  font-weight: 700;
+}
+.explorer-restaurants p {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 10px 20px 0px 20px;
+}
+
+.fonctionnement {
+  padding-left: 20px;
+  padding-bottom: 68px;
+}
+.fonctionnement h2 {
+  padding-top: 48px;
+}
+
+/* Bouton Explorer */
+.button-explore {
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  border-radius: 35px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 57px;
+  margin-top: 27px;
+  padding: 13px 18.75px;
+  position: relative;
+  /*
+          :hover{
+              @include bg-lighten;
+          }
+   */
+}
+
+/* Bouton Fonctionnement */
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  position: relative;
+  gap: 20px;
+  width: 100%;
+}
+.buttons .button-fonction {
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+  min-width: 322px;
+  background: #F6F6F6;
+  line-height: -16px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+  padding: 28.6px 38px 28px 34px;
+}
+.buttons .button-fonction .nombre {
+  display: flex;
+  height: 23px;
+  width: 23px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: #F6F6F6;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  padding-left: 7px;
+  position: relative;
+  top: 0px;
+  left: -45px;
+}
+.buttons .button-fonction span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.buttons .button-fonction .fa-solid {
+  margin-right: 20px;
+  line-height: 16px;
+}
+
+/* Cards */
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 69px;
+}
+.card .card-title {
+  font-size: 18px;
+}
+.card .card-content {
+  padding: 12px 16px 12px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.card .card-content .card-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  color: #FFF;
+}
+footer .logo-footer {
+  font-family: shrikhand;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 22px 10px 16px 25px;
+}
+footer ul {
+  list-style: none;
+  margin: 16px 25px 22px 25px;
+}
+footer ul li {
+  margin-bottom: 8px;
+}
+footer ul .icon-text {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer ul .fa-solid {
+  margin-right: 10px;
+}
+footer ul .small-span {
+  font-size: 16px;
+  font-weight: 400;
+}
+footer ul a {
+  color: white;
+  font-weight: 400;
+}
+
+/* Restaurants */
+.restaurants {
+  padding: 54px 20px 64px 20px;
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 18px;
+}
+.restaurants-cards .cards-part {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants-cards .card {
+  height: 20rem;
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.restaurants-cards .card img {
+  height: 17rem;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+.restaurants-cards .bouton-nouveau {
+  width: 80px;
+  height: 29px;
+  background: #99E2D0;
+  border-radius: 2px;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.restaurants-cards .card-content {
+  height: 33%;
+  padding: 16px 25px 12px 13px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurants-cards .card-content h3 {
+  font-size: 18px;
+}
+.restaurants-cards .card-content span {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image de fond */
+.image-de-fond {
+  min-height: 275px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-de-fond-gout {
+  background-image: url(../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.image-de-fond-francaise {
+  background-image: url(../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.image-de-fond-enchantee {
+  background-image: url(../images/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.image-de-fond-sens {
+  background-image: url(../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+/* Menu */
+.menu {
+  width: 100%;
+  height: auto;
+  background: #F7F7F7;
+  border-radius: 45px 45px 0px 0px;
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+}
+.menu .button-explore {
+  align-self: center;
+  margin-bottom: 40px;
+}
+.menu .menu-title {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  gap: 24px;
+}
+.menu .menu-title h1 {
+  font-family: shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+  padding-left: 17px;
+}
+.menu .menus-entrees-plats-desserts {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 13px 40px 13px;
+  gap: 40px;
+}
+.menu .menus-entrees-plats-desserts .menus-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  width: 40px;
+}
+.menu .section-menu-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu .section-menu-cards .card {
+  background: #FFFFFF;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.menu .section-menu-cards .card .card-content .card-text {
+  font-size: 15px;
+}
+.menu .section-menu-cards .card .card-content .price {
+  font-weight: 700;
+}
+.menu .section-menu-cards .card .card-content p, .menu .section-menu-cards .card .card-content h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+}
+.menu .section-menu-cards .card .check-menu i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: #99E2D0;
+}
+.menu .section-menu-cards .card .check-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 69px;
+  background: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: -70px;
+}
+.menu .card:hover .check-menu {
+  animation: choice 0.3s forwards ease-in;
+}
+
+@keyframes choice {
+  to {
+    margin-right: 0;
+  }
+}
+.entrees {
+  opacity: 0;
+  animation: menus-in 1s forwards ease-out;
+}
+
+.plats {
+  opacity: 0;
+  animation: menus-in 1s 0.5s forwards ease-out;
+}
+
+.desserts {
+  opacity: 0;
+  animation: menus-in 1s 1s forwards ease-out;
+}
+
+@keyframes menus-in {
+  from {
+    opacity: 0;
+    transform: translatey(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+.coeur .fa-solid {
+  display: none;
+  z-index: -1;
+}
+
+.coeur:hover .fa-sharp {
+  display: none;
+}
+.coeur:hover .fa-solid {
+  display: flex;
+  color: #FF79DA;
+  animation: fill-heart 2s forwards;
+}
+
+@keyframes fill-heart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=accueil.css.map */

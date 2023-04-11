@@ -1,0 +1,16 @@
+.location {
+    @include flex-justify-items-center;
+    gap: 17px;
+    background-color: #EAEAEA;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+        p {
+            font-weight: 500;
+            padding: 16px 0px 15px 0px;
+            margin: 0;
+        }
+        
+        i {
+            color: #353535;
+        }
+}
