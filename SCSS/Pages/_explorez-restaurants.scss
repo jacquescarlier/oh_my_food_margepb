@@ -1,0 +1,21 @@
+/* Explorer restaurants */ 
+
+.explorer-restaurants {
+    @include flex-column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F6F6;
+        h2 {
+            margin-top: 39px;
+            margin-bottom: 0;
+            line-height: 28px;
+            width: 70%;
+            font-weight: 700;
+        }
+        p {
+            font-size: 18px;
+            line-height: 21px;
+            margin: 10px 20px 0px 20px;
+        }
+    }
+

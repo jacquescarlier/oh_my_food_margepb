@@ -1,0 +1,51 @@
+/* Bouton Fonctionnement */
+
+.buttons{
+    @include flex-items-center;
+    flex-flow: column nowrap;
+    position: relative;
+    gap: 20px;
+    width: 100%;
+
+            .button-fonction{
+                display: flex;
+                flex-wrap: nowrap;
+                height: auto;
+                min-width: 322px;
+                background: #F6F6F6;
+                line-height: -16px;
+                border-radius: 20px;
+                border: none;
+                box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+                padding:28.6px 38px 28px 34px ;
+
+                .nombre{
+                    display: flex;
+                    height: 23px;
+                    width: 23px;
+                    background-color: #9356DC;
+                    border-radius: 50%;
+                    color: #F6F6F6;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 23px;
+                    padding-left: 7px;
+                    position:relative ;
+                    top: 0px;
+                    left: -45px;
+                }        
+
+                span{
+                    font-size: 16px;
+                    font-weight: 700;
+                    
+                }
+
+                .fa-solid{
+                    margin-right: 20px;
+                    line-height: 16px;
+                }
+            
+                }
+    
+}

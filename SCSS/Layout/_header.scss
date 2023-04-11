@@ -1,0 +1,18 @@
+/* Header */
+
+.navbar {
+    @include flex-justify-items-center;
+   
+        p {
+            font-family: shrikhand;
+            font-size: 30px;
+            padding: 14px 0px 5px 0px;
+        }
+
+        a {
+            position: absolute;
+            left: 23px;
+        }
+}
+
+
