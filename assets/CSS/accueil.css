@@ -299,6 +299,7 @@ footer ul a {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 .restaurants-cards .card-content h3 {
   font-size: 18px;
@@ -306,6 +307,11 @@ footer ul a {
 .restaurants-cards .card-content span {
   font-size: 17px;
   margin-top: 5px;
+}
+.restaurants-cards .card-content .coeur {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
 }
 
 .card {
@@ -454,13 +460,21 @@ footer ul a {
     transform: translatey(0);
   }
 }
+.coeur {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+}
+
 .coeur .fa-solid {
   display: none;
-  z-index: -1;
+  z-index: 1;
 }
 
 .coeur:hover .fa-sharp {
   display: none;
+  z-index: 1;
 }
 .coeur:hover .fa-solid {
   display: flex;
@@ -474,9 +488,10 @@ footer ul a {
   }
   50% {
     opacity: 0.5;
+    scale: 1.4;
   }
   100% {
-    opacity: 1;
+    opacity: 1.2;
   }
 }
 

@@ -54,6 +54,7 @@
                     @include flex-items-center; 
                     flex-direction: row;
                     justify-content: space-between;
+                    position: relative;
                     
                         h3 {
                             font-size: 18px;
@@ -62,7 +63,13 @@
                             font-size: 17px;
                             margin-top: 5px; 
                         }
+                        .coeur {
+                            position: absolute;
+                            right: 5%;
+                            bottom: 15%;
+                        }
                 }
+                
 }
 .card {
     @include flex-column;

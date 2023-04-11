@@ -1,28 +1,45 @@
-
-.coeur .fa-solid{
-    display: none;
-    z-index: -1;
+.coeur{
+    height: 10px;
+    width: 10px;
+    position: relative;
+    padding: 10px 10px 10px 10px;
 }
-.coeur:hover {
+.coeur .fa-solid{
     
+    display: none;
+    z-index: 1;
+   
+}
+
+
+.coeur:hover {
+
     .fa-sharp{
+        
         display: none;
+        z-index: 1;
+       
     }
     .fa-solid{
         display: flex;
         color: $couleur-secondaire;
         animation: fill-heart 2s forwards;
+
     }
 }
 
 @keyframes fill-heart {
     0% {
         opacity: 0;
+       
     }
     50% {
         opacity: 0.5;
+        scale: 1.4;
+        
     }
     100% {
-        opacity: 1;
+        opacity: 1.2;
+        
     }
 }
