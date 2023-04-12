@@ -5,7 +5,8 @@
     padding: 10px 10px 10px 10px;
 }
 .coeur .fa-solid{
-    
+    position: absolute;
+    top: 10px;
     display: none;
 }
 
@@ -26,11 +27,14 @@
 @keyframes fill-heart {
     0% {
         opacity: 0;
+        scale: 1.1;
     }
     50% {
         opacity: 0.5;
+        scale: 1.3;
     }
     100% {
         opacity: 1;
+        scale: 1.1;
     }
 }
