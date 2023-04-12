@@ -13,8 +13,8 @@
         .cards-part {
             @include flex-column;
             gap: 18px;
-        }
-        .card {
+        
+            .card {
                 height: 20rem;
                 width: 100%;
                 background: #FFFFFF;
@@ -23,54 +23,55 @@
                 position: relative;
                @include flex-column;
             }
+            .card img {
+                height: 17rem;
+                width: 100%;
+                border-radius: 15px 15px 0 0;
+                object-fit: cover; 
+                overflow: hidden;
+            }
 
-                .card img {
-                    height: 17rem;
-                    width: 100%;
-                    border-radius: 15px 15px 0 0;
-                    object-fit: cover; 
-                    overflow: hidden;
-                }
-
-                .bouton-nouveau {
-                    width: 80px;
-                    height: 29px;
-                    background: $couleur-tertiaire;
-                    border-radius: 2px;
-                    color: #008766;
-                    font-size: 14px;
-                    font-weight: 500;
-                    @include flex-justify-items-center;
-                    position:absolute;
-                    right: 5%;
-                    top: 5%;
-                }
+            .bouton-nouveau {
+                width: 80px;
+                height: 29px;
+                background: $couleur-tertiaire;
+                border-radius: 2px;
+                color: #008766;
+                font-size: 14px;
+                font-weight: 500;
+                @include flex-justify-items-center;
+                position:absolute;
+                right: 5%;
+                top: 5%;
+            }
                 
-                .card-content {
-                    height: 33%;
-                    padding: 16px 25px 12px 13px;
-                    @include flex-items-center; 
-                    flex-direction: row;
-                    justify-content: space-between;
-                    position: relative;
+            .card-content {
+                height: 33%;
+                padding: 16px 25px 12px 13px;
+                @include flex-items-center; 
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
                     
-                        h3 {
-                            font-size: 18px;
-                        }
-                        span {
-                            font-size: 17px;
-                            margin-top: 5px; 
-                        }
-                        .coeur {
-                            position: relative;
+                    h3 {
+                        font-size: 18px;
+                    }
+                    span {
+                        font-size: 17px;
+                        margin-top: 5px; 
+                    }
+                    .coeur {
+                        position: relative;
                             
-                            .fa-solid{
-                                position: absolute;
-                                top: 20px;
-                            }
-                           
+                        .fa-solid{
+                            position: absolute;
+                            top: 20px;
                         }
-                }
+                           
+                    }
+            }
+            
+        }
                 
 }
 

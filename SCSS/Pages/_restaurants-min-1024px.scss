@@ -1,0 +1,55 @@
+@media screen  and (min-width: 1024px) {
+ 
+.main-container {
+    width: 100%;
+    min-width: 1024px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.fonctionnement{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+        h2{
+            text-align: left;
+        }
+
+        .buttons{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            gap: 32px;
+            
+        }
+
+}
+
+.restaurants{
+    margin: 0 auto;
+    h2{
+        
+    }
+
+    .cards-part{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.menu{
+    margin-left: 13%;
+    margin-right: 13%;
+    width: 74%;
+}
+
+
+
+
+    }
+
+

@@ -1,9 +1,9 @@
 @mixin bg-lighten{
-    background: lighten(linear-gradient(to bottom, lighten($couleur-primaire, 0%), lighten($couleur-secondaire, 100%)))
+    opacity: 0.9;
 }
 @mixin bg-linear-gradient {
     background: linear-gradient(to bottom, $couleur-primaire 0% ,  $couleur-secondaire 100%);
 }
 @mixin highlight{
-    background: lighten($background-principal, 10);
+    background: lighten($background-principal, 2.5%);
 }
