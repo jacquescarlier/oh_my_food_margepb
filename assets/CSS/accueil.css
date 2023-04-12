@@ -317,6 +317,10 @@ footer ul a {
 .restaurants-cards .card-content .coeur {
   position: relative;
 }
+.restaurants-cards .card-content .coeur .fa-solid {
+  position: absolute;
+  top: 20px;
+}
 
 /* Image de fond */
 .image-de-fond {
