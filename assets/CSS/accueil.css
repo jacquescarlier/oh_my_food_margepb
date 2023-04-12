@@ -594,6 +594,7 @@ footer ul a {
   footer .logo-footer {
     text-align: left;
     line-height: 0px;
+    margin-right: 16px;
   }
   footer ul {
     display: flex;
