@@ -12,11 +12,11 @@
                 flex-wrap: nowrap;
                 height: auto;
                 min-width: 322px;
-                background: #F6F6F6;
+                background: $background-principal;
                 line-height: -16px;
                 border-radius: 20px;
                 border: none;
-                box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+                box-shadow: -3px 0 3px rgba(0, 0, 0, 0.15);
                 padding:28.6px 38px 28px 34px ;
 
                 .nombre{
@@ -38,6 +38,7 @@
                 span{
                     font-size: 16px;
                     font-weight: 700;
+                    text-decoration: none;
                     
                 }
 
@@ -46,6 +47,9 @@
                     line-height: 16px;
                 }
             
+                }
+                :hover{
+                    @include highlight;
                 }
     
 }
