@@ -52,6 +52,7 @@
                     @include flex-items-center; 
                     flex-direction: row;
                     justify-content: space-between;
+                    position: relative;
                     
                         h3 {
                             font-size: 18px;
@@ -60,15 +61,7 @@
                             font-size: 17px;
                             margin-top: 5px; 
                         }
-                        .coeur {
-                            height: 22px;
-                            width: 21px;
-                            margin: 0px;
-                            padding: 0;
-                            position: relative;
-                            right: 5px;
-                            bottom: -10px;
-                        }
                 }
+                
 }
 
