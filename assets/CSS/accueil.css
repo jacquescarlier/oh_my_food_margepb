@@ -374,6 +374,10 @@ footer ul a {
   padding: 0;
   position: relative;
 }
+.menu .menu-title .coeur .fa-solid {
+  position: absolute;
+  top: 10px;
+}
 .menu .menus-entrees-plats-desserts {
   display: flex;
   flex-direction: column;
