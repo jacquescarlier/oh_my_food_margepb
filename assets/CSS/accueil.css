@@ -314,6 +314,11 @@ footer ul a {
   font-size: 17px;
   margin-top: 5px;
 }
+.restaurants-cards .card-content .coeur {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
 
 /* Image de fond */
 .image-de-fond {
