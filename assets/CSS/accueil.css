@@ -12,6 +12,7 @@ h2 {
 
 h3 {
   font-size: 16px;
+  font-weight: 700;
 }
 
 a {
@@ -57,6 +58,7 @@ body {
 .navbar p {
   font-family: shrikhand;
   font-size: 30px;
+  font-weight: 400;
   padding: 14px 0px 5px 0px;
 }
 .navbar a {
@@ -153,7 +155,7 @@ body {
   height: 72px;
   width: auto;
   background: #F6F6F6;
-  line-height: -16px;
+  /*line-height: -16px;*/
   border-radius: 20px;
   border: none;
   box-shadow: 0 2px rgba(0, 0, 0, 0.15);
@@ -171,8 +173,8 @@ body {
   line-height: 23px;
   padding-left: 7px;
   position: relative;
-  top: 0px;
-  left: -45px;
+  top: -4px;
+  left: -42.5px;
 }
 .buttons .button-fonction span {
   font-size: 16px;
@@ -245,9 +247,6 @@ footer ul .icon-text {
   gap: 11px;
   font-weight: 500;
   font-size: 16px;
-}
-footer ul .fa-solid {
-  margin-right: 10px;
 }
 footer ul .small-span {
   font-size: 16px;
@@ -563,20 +562,48 @@ footer ul a {
   .fonctionnement .buttons {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 32px;
   }
   .restaurants {
     margin: 0 auto;
   }
+  .restaurants .restaurants-cards {
+    gap: 55px;
+  }
   .restaurants .cards-part {
     display: flex;
     flex-direction: row;
+    gap: 91px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .menu {
     margin-left: 13%;
     margin-right: 13%;
     width: 74%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding-top: 57px;
+    padding-bottom: 30px;
+    padding-right: 26.4px;
+  }
+  footer .logo-footer {
+    text-align: left;
+    line-height: 0px;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul .icon-text {
+    margin-right: 7px;
+    line-height: 16px;
+  }
+  footer ul .small-span {
+    margin-left: 10px;
   }
 }
 

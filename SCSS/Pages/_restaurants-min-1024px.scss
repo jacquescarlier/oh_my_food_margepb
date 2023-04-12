@@ -21,7 +21,7 @@
         .buttons{
             display: flex;
             flex-flow: row nowrap;
-            justify-content: center;
+            justify-content: space-evenly;
             gap: 32px;
             
         }
@@ -30,13 +30,16 @@
 
 .restaurants{
     margin: 0 auto;
-    h2{
-        
+    .restaurants-cards {
+        gap: 55px;
     }
 
     .cards-part{
         display: flex;
         flex-direction: row;
+        gap: 91px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
@@ -49,7 +52,37 @@
 
 
 
+footer{
+    @include flex-row ;
+    flex-direction: row-reverse;
+    padding-top: 57px;
+    padding-bottom: 30px;
+    padding-right: 26.4px;
 
+    .logo-footer {
+        text-align: left;
+        line-height: 0px;
+
+    }
+        ul {
+            display: flex;
+
+                
+                    .icon-text {
+                       margin-right: 7px;
+                     line-height: 16px;
+                        }
+                    
+                    .small-span {
+                        margin-left: 10px;    
+                        }
+                    
+                
+        }
+
+
+
+}
     }
 
 
