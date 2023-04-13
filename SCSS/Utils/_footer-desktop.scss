@@ -1,0 +1,32 @@
+@mixin footer-desktop{
+footer{
+    @include flex-row ;
+    flex-direction: row-reverse;
+    padding: 64px 26px 30px 0;
+
+    .logo-footer {
+        position: absolute;
+        margin-right: 1.02%;
+        text-align: left;
+        line-height: 5px;
+    }
+        
+    ul {
+        display: flex;
+        position: relative;
+        right: 10%;
+
+            .icon-text {    
+                @include flex-row;
+                width:200px;  
+                line-height: 16px;
+            }
+                    
+            .small-span {
+                @include flex-row;
+                width: 130px;
+                margin-left: 0px;    
+            }        
+        }
+    }
+}

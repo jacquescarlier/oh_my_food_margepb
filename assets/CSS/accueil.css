@@ -610,12 +610,12 @@ footer ul a {
   .restaurants .restaurants-cards {
     gap: 55px;
   }
-  .restaurants .cards-part {
+  .restaurants .restaurants-cards .cards-part {
     display: flex;
     flex-direction: row;
     gap: 100px;
   }
-  .restaurants .cards-part .card {
+  .restaurants .restaurants-cards .cards-part .card {
     max-width: 500px;
   }
   .menu {
@@ -627,24 +627,30 @@ footer ul a {
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
-    padding-top: 57px;
-    padding-bottom: 30px;
-    padding-right: 26.4px;
+    padding: 64px 26px 30px 0;
   }
   footer .logo-footer {
+    position: absolute;
+    margin-right: 1.02%;
     text-align: left;
-    line-height: 0px;
-    margin-right: 16px;
+    line-height: 5px;
   }
   footer ul {
     display: flex;
+    position: relative;
+    right: 10%;
   }
   footer ul .icon-text {
-    margin-right: 7px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
     line-height: 16px;
   }
   footer ul .small-span {
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 130px;
+    margin-left: 0px;
   }
 }
 @media screen and (min-width: 1440.2px) {
