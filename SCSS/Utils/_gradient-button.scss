@@ -5,5 +5,5 @@
     background: linear-gradient(to bottom, $couleur-primaire 0% ,  $couleur-secondaire 100%);
 }
 @mixin highlight{
-    background: lighten($background-principal, 2.5%);
+    background: lighten($couleur-neutre, 2.5%);
 }

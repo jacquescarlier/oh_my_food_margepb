@@ -2,7 +2,7 @@
 
 .restaurants {
     padding: 54px 20px 64px 20px;
-    background: #F7F7F7;
+    background: $bg-explorer;
     @include flex-column;
 }
 

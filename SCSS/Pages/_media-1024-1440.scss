@@ -20,23 +20,19 @@
     
 }
 .fonctionnement{
-    padding-left: 4%;
+    padding-left: 6%;
     padding-bottom: 50px;
     position: relative;
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
+    @include flex-column;
 
         h2{
             text-align: left;
             padding-top: 36px;
-            
         }
 
         .buttons{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: left;
+            @include flex-row;
             gap: 32px;
 
                 .button-fonction{
@@ -57,15 +53,14 @@
 
 .restaurants{
     margin: 0 auto;
-    padding-left: 4%;
+    padding-left: 6%;
     padding-top: 30px;
 
         .restaurants-cards {
             gap: 55px;
 
                 .cards-part{
-                    display: flex;
-                    flex-direction: row;
+                    @include flex-row;
                     gap: 100px;
                 
                         .card{

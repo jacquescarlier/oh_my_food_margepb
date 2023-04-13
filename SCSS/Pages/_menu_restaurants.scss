@@ -27,7 +27,7 @@
 .menu {
     width: 100%;
     height: auto;
-    background: #F7F7F7;
+    background: $bg-explorer;
     border-radius: 45px 45px 0px 0px;
     margin-top: -40px;
     @include flex-column;
@@ -66,7 +66,7 @@
                 .menus-subtitle {
                     font-weight: 300;
                     font-size: 16px;
-                    border-bottom: 3px solid #99E2D0;
+                    border-bottom: 3px solid $couleur-tertiaire;
                     padding-bottom: 5px;
                     margin-bottom: 12px;
                     width: 40px;
@@ -122,7 +122,7 @@
 
                         .check-menu i { 
                             @include flex-justify-items-center;
-                            background-color: #fff;
+                            background-color: #ffffff;
                             height: 20px;
                             width: 20px;
                             border-radius: 50%;
@@ -133,7 +133,7 @@
                             @include flex-justify-items-center;
                             width: 59px;
                             height: 69px;
-                            background: #99E2D0;
+                            background: $couleur-tertiaire;
                             border-radius: 0px 15px 15px 0px;
                             margin-right: -70px;
                         }

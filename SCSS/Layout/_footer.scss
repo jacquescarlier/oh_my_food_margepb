@@ -2,8 +2,8 @@
 
 footer {
     @include flex-column;
-    background: #353535;
-    color: #FFF;
+    background: $font-couleur-location;
+    color: $couleur-neutre;
 
     .logo-footer {
         font-family: shrikhand;
@@ -31,7 +31,7 @@ footer {
                     font-weight:400;   
                 }
                 a {
-                    color: white;
+                    color: #FFFFFF;
                     font-weight: 400;
                 }
             }
