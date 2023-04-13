@@ -2,13 +2,26 @@
  
 .main-container {
     width: 100%;
-    min-width: 1024px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
 }
 
+@include header-desktop;
+
+.explorer-restaurants{
+    h2{
+        font-size: 40px;
+        margin: 30px 0 8px 0;
+    }
+    .button-explore{
+        margin: 18px 0px 30px 0px;
+    }
+    
+}
 .fonctionnement{
+    padding-left: 4%;
+    padding-bottom: 50px;
     position: relative;
     width: 100%;
     display: flex;
@@ -16,13 +29,27 @@
 
         h2{
             text-align: left;
+            padding-top: 36px;
+            
         }
 
         .buttons{
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-evenly;
+            justify-content: left;
             gap: 32px;
+
+            .button-fonction{
+                max-width: 322px;
+
+                    .fa-solid {
+                        font-size: 16px;
+                    }
+
+                    span {
+                        font-weight: 500;
+                    }
+            }
             
         }
 
@@ -30,6 +57,8 @@
 
 .restaurants{
     margin: 0 auto;
+    padding-left: 4%;
+    padding-top: 30px;
     .restaurants-cards {
         gap: 55px;
     }
@@ -37,9 +66,11 @@
     .cards-part{
         display: flex;
         flex-direction: row;
-        gap: 91px;
-        margin-left: 50px;
-        margin-right: 50px;
+        gap: 100px;
+        
+        .card{
+            max-width: 500px;
+        }
     }
 }
 

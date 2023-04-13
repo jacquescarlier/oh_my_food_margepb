@@ -4,6 +4,7 @@
 @import  'Bases/elements';
 @import 'Bases/general';
 @import 'Layout/header';
+@import 'Utils/header-desktop';
 @import 'Pages/lieu';
 @import 'Pages/explorez-restaurants';
 @import 'Pages/fonctionnement';
@@ -14,4 +15,5 @@
 @import 'Pages/restaurants';
 @import 'Pages/menu_restaurants';
 @import 'Utils/coeur';
-@import 'Pages/restaurants-min-1024px';
+@import 'Pages/media-1024-1440';
+@import 'Pages/media-sup-1440';
