@@ -1,3 +1,5 @@
+/* ~~\ loader /~~ */
+
 .loader {
   position: absolute;
   background-color: #FFFFFF;
@@ -7,6 +9,58 @@
   opacity: 0.9;
   animation: loader-decal 0s 3s forwards;
   transform-origin: top;
+      
+    .regroupement {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+        .ensemble{
+          position: absolute;
+          margin: 5px auto;
+          top: 130px;
+          left: 5px;
+          width: 100%;
+          height: 80vh;
+          @include flex-justify-items-center;
+          flex-flow: row nowrap;
+          animation: secouer 3s linear infinite;
+
+            .casserole{
+              height: 30px;
+              width: 150px;
+              background: #EAEAEA;
+              border-bottom-left-radius: 30px;
+              border-bottom-right-radius: 30px;
+              float: initial;
+            }
+      
+            .manche{
+              height: 6px;
+              width: 120px;
+              background: Black;
+              border-radius: 0px 5px 5px 0px;
+              position:relative ;
+              top: -10px;
+              left: -1px;
+            }
+      
+            .balles{
+              height: 10px;
+              width: 40px;
+              border: 5px solid #99E2D0;
+              border-radius: 20%;
+              position: relative;
+              top: 0px;
+              left: -215px;
+              z-index: -1;
+              animation: bounce2 3s linear infinite;
+            }
+        }
+    }
 }
 @keyframes loader-decal {
   0% {
@@ -18,60 +72,6 @@
   100% {
       transform: scaley(0);
   }
-}
-
-
-.regroupement{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-    .ensemble{
-      position: absolute;
-      margin: 5px auto;
-      top: 130px;
-      left: 5px;
-      width: 100%;
-      height: 80vh;
-      @include flex-justify-items-center;
-      flex-flow: row nowrap;
-      animation: secouer 3s linear infinite;
-
-        .casserole{
-          height: 30px;
-          width: 150px;
-          background: #EAEAEA;
-          border-bottom-left-radius: 30px;
-          border-bottom-right-radius: 30px;
-          float: initial;
-        }
-      
-        .manche{
-          height: 6px;
-          width: 120px;
-          background: Black;
-          border-radius: 0px 5px 5px 0px;
-          position:relative ;
-          top: -10px;
-          left: -1px;
-        }
-      
-        .balles{
-          height: 10px;
-          width: 40px;
-          border: 5px solid #99E2D0;
-          border-radius: 20%;
-          position: relative;
-          top: 0px;
-          left: -215px;
-          z-index: -1;
-          animation: bounce2 3s linear infinite;
-        }
-    }
-
 }
 
 @keyframes secouer {
