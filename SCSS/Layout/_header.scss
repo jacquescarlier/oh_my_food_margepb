@@ -1,6 +1,7 @@
 /* Header */
 .navbar {
     @include flex-justify-items-center;
+    background: #FFFFFF;
    
         p {
             font-family: shrikhand;
