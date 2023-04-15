@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pb marge</title>
+    <title>Ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="main-container">
-        <!--<div class="loader">
+        <div class="loader">
             <div class="regroupement">
                 <div class="ensemble">
                     <div class="casserole"></div>
@@ -21,7 +21,7 @@
                     <div class="balles"></div>
                 </div> 
             </div>
-        </div>-->
+        </div>
         <header>
             <nav class="navbar">
                 <p>ohmyfood</p>
@@ -37,11 +37,10 @@
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
                 <button class="button-explore"><a href="#restaurants" >Explorer nos restaurants</a></button>
             </section>
-            <div class="parents">
             <section class="fonctionnement">
                 <h2>Fonctionnement</h2>
                 <div class="buttons">
-                    <button type="submit" class="button-fonction"><span class="nombre">1</span><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span> </button>
+                    <label for="double-bg"><button type="submit" class="button-fonction" > <span class="nombre">1</span><i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span></button></label>
                     
                     <button type="submit" class="button-fonction"><span class="nombre">2</span><i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span> </button>
                     
@@ -54,7 +53,7 @@
                     <div class="cards-part">
                         <a href="restaurants/menu_palette_du_gout.html" class="card" >
                             <span class="bouton-nouveau">Nouveau</span>
-                            <img src="assets/images/palette_du_gout.jpg" alt="Table du restaurant La palette du goût">
+                            <img src="assets/images/palette_du_gout.jpg" alt="Table du restaurant La palette du goût" id="double-bg">
                             <div class="card-content">
                                 <div class="content-text">
                                     <h3>La palette du goût</h3>
@@ -111,7 +110,6 @@
                     </div>
                 </div>
             </section>
-            </div>
         </main>
         <footer>
             <span class="logo-footer">ohmyfood</span>

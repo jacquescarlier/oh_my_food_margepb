@@ -1,4 +1,26 @@
-/*
+.loader {
+  position: fixed;
+  background-color: #FFFFFF;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  animation: loader-decal 0s 3s forwards;
+  transform-origin: top;
+}
+@keyframes loader-decal {
+  0% {
+      transform: scaley(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+      transform: scaley(0);
+  }
+}
+
+
 .regroupement{
   width: 100%;
   height: 100%;
@@ -16,7 +38,7 @@
       height: 80vh;
       @include flex-justify-items-center;
       flex-flow: row nowrap;
-      animation: secouer 2s linear infinite;
+      animation: secouer 3s linear infinite;
 
         .casserole{
           height: 30px;
@@ -46,7 +68,7 @@
           top: 0px;
           left: -215px;
           z-index: -1;
-          animation: bounce2 2s linear infinite;
+          animation: bounce2 3s linear infinite;
         }
     }
 
