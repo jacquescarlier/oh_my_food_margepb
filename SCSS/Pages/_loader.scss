@@ -1,12 +1,13 @@
 /* ~~\ loader /~~ */
 
 .loader {
-  position: absolute;
+  position: fixed;
   background-color: #FFFFFF;
-  height: 100vh;
+  height: 100VH;
+  width: 100%;
   inset: 0;
   z-index: 2;
-  opacity: 0.9;
+  opacity: 0.95;
   animation: loader-decal 0s 3s forwards;
   transform-origin: top;
       
