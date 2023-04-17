@@ -109,7 +109,8 @@
                                 gap: 5px;
                                 width: 100%;
 
-                                .card-title h3 {
+                                .card-title {
+                                    
                                     font-size: 18px;
                                     font-weight: 500;
                                     margin: 0px;
@@ -123,16 +124,17 @@
                                         .price {
                                         font-weight: 700;
                                         }
-
-                                        span{
+                                    
+                                        .intitule{
+                                            max-width: 80%;
                                             font-size: 16px;
                                             font-weight: 300;
                                             margin: 0px;
-                                            max-width: 80%;
+                                            text-overflow: ellipsis;
+                                            overflow: hidden;
                                             white-space: nowrap;
                                             overflow: hidden;
-                                            text-overflow: ellipsis;
-                                            
+                                             
                                         }
                                 }
                             }
@@ -152,7 +154,7 @@
                             height: 69px;
                             background: $couleur-tertiaire;
                             border-radius: 0px 15px 15px 0px;
-                            margin-right: -70px;
+                            margin-right: -60px;
                         }
 
                     }
@@ -167,7 +169,7 @@
 }
 
 .card:hover .check-menu {
-    animation: choice 0.3s forwards ease-in ;
+    animation: choice 0.1s forwards ease-in ;
 }
 
 @keyframes choice {

@@ -334,7 +334,7 @@ span {
   gap: 5px;
   width: 100%;
 }
-.menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-title h3 {
+.menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-title {
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
@@ -347,14 +347,15 @@ span {
 .menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text .price {
   font-weight: 700;
 }
-.menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text span {
+.menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text .intitule {
+  max-width: 80%;
   font-size: 16px;
   font-weight: 300;
   margin: 0px;
-  max-width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu .menus-entrees-plats-desserts .section-menu-cards .card .check-menu i {
   display: flex;
@@ -374,7 +375,7 @@ span {
   height: 69px;
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  margin-right: -70px;
+  margin-right: -60px;
 }
 .menu .button-explore {
   align-self: center;
@@ -382,7 +383,7 @@ span {
 }
 
 .card:hover .check-menu {
-  animation: choice 0.3s forwards ease-in;
+  animation: choice 0.1s forwards ease-in;
 }
 
 @keyframes choice {
@@ -521,7 +522,7 @@ span {
   flex-wrap: nowrap;
   height: 72px;
   width: auto;
-  background: #F6F6F6;
+  background: #F7F7F7;
   border-radius: 20px;
   border: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -641,19 +642,17 @@ footer ul a {
     justify-content: center;
     align-items: center;
   }
-  .navbar p {
+  .navbar h1 {
     font-family: shrikhand;
     font-size: 30px;
     font-weight: 400;
     padding: 26px 0px 26px 0px;
+    transform: scale(1.2);
   }
   .navbar a {
     max-width: 1440px;
     position: relative;
     left: -41%;
-  }
-  h1 {
-    transform: scale(1.2);
   }
   .explorer-restaurants h2 {
     font-size: 40px;
