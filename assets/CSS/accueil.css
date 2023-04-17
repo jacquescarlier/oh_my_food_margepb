@@ -350,7 +350,7 @@ span {
 .menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text .price {
   font-weight: 700;
 }
-.menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text .intitule {
+.menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text span {
   font-weight: 300;
   margin: 0px;
   text-overflow: ellipsis;
