@@ -27,8 +27,8 @@ body {
 
 /* éléments texte */
 h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -47,6 +47,12 @@ a {
 }
 
 p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+span {
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -255,17 +261,28 @@ p {
   display: flex;
   flex-direction: column;
 }
+.menu h2 {
+  font-family: shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+  padding-left: 17px;
+}
+.menu h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.menu span {
+  font-size: 15px;
+}
 .menu .menu-title {
   display: flex;
   align-items: center;
   padding-top: 32px;
   gap: 24px;
-}
-.menu .menu-title h1 {
-  font-family: shrikhand;
-  font-size: 28px;
-  font-weight: 400;
-  padding-left: 17px;
 }
 .menu .menu-title .coeur {
   height: 22px;
