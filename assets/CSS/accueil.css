@@ -332,15 +332,14 @@ span {
   flex-direction: column;
   gap: 5px;
   width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-title h4 {
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  max-width: 80%;
 }
 .menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content .card-text {
   display: flex;
