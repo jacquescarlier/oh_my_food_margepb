@@ -9,6 +9,9 @@
 
 @include header-desktop;
 
+h1{
+    transform: scale(1.2);
+}
 .explorer-restaurants{
     h2{
         font-size: 40px;
