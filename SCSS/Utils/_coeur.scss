@@ -1,3 +1,4 @@
+
 .coeur{
     height: 10px;
     width: 10px;
@@ -17,9 +18,12 @@
     .fa-sharp{
         display: none;
     }
+    .fa-solid::before{
+        color: $couleur-primaire;
+    }
     .fa-solid{
         display: flex;
-        color: $couleur-primaire;
+       
         animation: fill-heart 2s forwards;
 
     }

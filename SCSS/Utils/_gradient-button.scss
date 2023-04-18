@@ -1,11 +1,11 @@
 
 @mixin bg-linear-gradient {
-    background: linear-gradient(to bottom, $couleur-primaire 0% ,  $couleur-secondaire 100%);
+    background: linear-gradient(to top, $couleur-primaire 0% ,  $couleur-secondaire 100%);
 }
 @mixin highlight{
     background: lighten($bg-explorer, 5%);
 }
 
 @mixin gradient-light{
-    background: linear-gradient(to bottom, $lighten-primaire 0%, $lighten-secondaire 100%);
+    background: linear-gradient(to top, $lighten-primaire 0%, $lighten-secondaire 100%);
 } 

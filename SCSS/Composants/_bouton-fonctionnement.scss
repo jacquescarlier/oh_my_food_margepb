@@ -45,11 +45,15 @@
                     text-decoration: none;
                     
                 }
+                .fa-color {
+                    color: $couleur-primaire;
+                }
 
                 .fa-solid{
                     margin-right: 20px;
                     line-height: 16px;
                 }
-            
+                
+                 
                 }
 }
