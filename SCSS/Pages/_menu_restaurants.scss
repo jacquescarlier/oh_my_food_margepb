@@ -157,11 +157,7 @@
     animation: choice 0.3s forwards ease-in ;
 }
 
-@keyframes choice {
-    to {
-        margin-right: 0;
-    }
-}
+@include choice;
 
 .entrees {
     opacity: 0;
@@ -178,16 +174,7 @@
     animation: menus-in 1s 1s forwards ease-out;
 }
 
-@keyframes menus-in {
-    from {
-        opacity: 0;
-        transform: translatey(-20%);
-    }
-    to {
-        opacity: 1;
-        transform: translatey(0);
-    }
-}
+@include menu-in;
 
 
 
