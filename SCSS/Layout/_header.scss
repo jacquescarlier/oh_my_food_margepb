@@ -16,4 +16,23 @@
         }
 }
 
+@mixin header-desktop{
+    .navbar {
+        @include flex-justify-items-center;
+       
+            h1 {
+                font-family: shrikhand;
+                font-size: 30px;
+                font-weight: 400;
+                padding: 26px 0px 26px 0px;
+                transform: scale(1.2);
+            }
+    
+            a {
+                max-width: 1440px;
+                position: relative;
+                left: -41%;   
+            }
+    }
+    }
 
