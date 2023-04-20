@@ -31,20 +31,12 @@
             gap: 24px;
 
             
-                .coeur {
-                    height: 22px;
-                    width: 21px;
+                .coeur svg {
+                   
                     margin: 0px;
                     margin-right: 5px;
-                    padding: 0;
                     position: relative;
-                    top: 0px;
-
-                    .fa-solid{
-                        position: absolute;
-                        top: 10px;
-                        
-                    }
+                    
                 }
         }
 

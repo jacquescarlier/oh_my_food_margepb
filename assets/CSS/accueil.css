@@ -210,6 +210,15 @@ span {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  /*.coeur {
+      position: relative;
+
+      .fa-solid{
+          position: absolute;
+          top: 20px;
+      }
+
+  }*/
 }
 .restaurants-cards .cards-part .card-content h3 {
   font-size: 18px;
@@ -219,13 +228,6 @@ span {
   font-size: 17px;
   font-weight: 300;
   margin-top: 5px;
-}
-.restaurants-cards .cards-part .card-content .coeur {
-  position: relative;
-}
-.restaurants-cards .cards-part .card-content .coeur .fa-solid {
-  position: absolute;
-  top: 20px;
 }
 
 /* Image de fond */
@@ -279,18 +281,10 @@ span {
   padding-top: 32px;
   gap: 24px;
 }
-.menu .menu-title .coeur {
-  height: 22px;
-  width: 21px;
+.menu .menu-title .coeur svg {
   margin: 0px;
   margin-right: 5px;
-  padding: 0;
   position: relative;
-  top: 0px;
-}
-.menu .menu-title .coeur .fa-solid {
-  position: absolute;
-  top: 10px;
 }
 .menu .menus-entrees-plats-desserts {
   display: flex;
@@ -601,43 +595,60 @@ footer ul a {
   font-weight: 400;
 }
 
-.coeur {
-  height: 10px;
-  width: 10px;
-  position: relative;
-  top: -14px;
-  padding: 10px 10px 10px 10px;
+/*.coeur{
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: -14px;
+   /* padding: 10px 10px 10px 10px;*/ /*
+}
+.coeur .fa-solid{
+    position: absolute;
+    top: 10px;
+    display: none;
+}*/
+.coeur svg {
+  color: black;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  stroke: Black;
+  height: 30px;
+  width: 30px;
 }
 
-.coeur .fa-solid {
+.restaurant-cards .cards-part .card-content .coeur {
   position: absolute;
-  top: 10px;
-  display: none;
+  right: 5%;
+  bottom: 13%;
 }
 
-.coeur:hover .fa-sharp {
-  display: none;
-}
-.coeur:hover .fa-solid::before {
-  color: #9356DC;
-}
-.coeur:hover .fa-solid {
-  display: flex;
+.coeur svg path:hover {
   animation: fill-heart 2s forwards;
+  /*.fa-sharp{
+      display: none;
+  }
+  .fa-solid::before{
+      color: $couleur-primaire;
+  }
+  .fa-solid{
+      display: flex;
+      animation: fill-heart 2s forwards;
+  }*/
 }
 
 @keyframes fill-heart {
   0% {
-    opacity: 0;
-    transform: scale(1.1);
+    fill-opacity: 0;
+    stroke-opacity: 1;
   }
   50% {
-    opacity: 0.5;
-    transform: scale(1.3);
+    fill-opacity: 0.5;
+    stroke-opacity: 0;
   }
   100% {
-    opacity: 1;
-    transform: scale(1.1);
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    transform: scale(1.15);
   }
 }
 @media screen and (min-width: 1024px) {

@@ -1,21 +1,37 @@
 
-.coeur{
+/*.coeur{
     height: 10px;
     width: 10px;
     position: relative;
     top: -14px;
-    padding: 10px 10px 10px 10px;
+   /* padding: 10px 10px 10px 10px;*//*
 }
 .coeur .fa-solid{
     position: absolute;
     top: 10px;
     display: none;
+}*/
+.coeur svg{
+    color: black;
+    fill: url(#gradient);
+    fill-opacity: 0;
+    stroke: Black;
+    height: 30px;
+    width: 30px;
+}
+
+.restaurant-cards .cards-part .card-content .coeur{
+    position: absolute;
+    right: 5%;
+    bottom: 13%;
 }
 
 
-.coeur:hover {
+.coeur svg path:hover {
 
-    .fa-sharp{
+    animation: fill-heart 2s forwards;
+
+    /*.fa-sharp{
         display: none;
     }
     .fa-solid::before{
@@ -24,7 +40,7 @@
     .fa-solid{
         display: flex;
         animation: fill-heart 2s forwards;
-    }
+    }*/
 }
 
 @include fill-heart;
