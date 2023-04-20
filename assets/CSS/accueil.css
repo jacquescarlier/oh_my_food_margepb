@@ -615,25 +615,14 @@ footer ul a {
   height: 30px;
   width: 30px;
 }
+.coeur svg:hover {
+  animation: fill-heart 2s forwards;
+}
 
 .restaurant-cards .cards-part .card-content .coeur {
   position: absolute;
   right: 5%;
   bottom: 13%;
-}
-
-.coeur svg path:hover {
-  animation: fill-heart 2s forwards;
-  /*.fa-sharp{
-      display: none;
-  }
-  .fa-solid::before{
-      color: $couleur-primaire;
-  }
-  .fa-solid{
-      display: flex;
-      animation: fill-heart 2s forwards;
-  }*/
 }
 
 @keyframes fill-heart {
