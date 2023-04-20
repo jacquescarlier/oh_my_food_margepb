@@ -602,7 +602,7 @@ footer ul a {
   width: 30px;
 }
 .coeur svg:hover {
-  animation: fill-heart 2s forwards;
+  animation: fill-heart 2s;
 }
 
 .restaurant-cards .cards-part .card-content .coeur {
