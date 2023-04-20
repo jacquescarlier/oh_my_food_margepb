@@ -126,7 +126,7 @@
                             height: 69px;
                             background: $couleur-tertiaire;
                             border-radius: 0px 15px 15px 0px;
-                            margin-right: -4em;
+                            margin-right: -60px;
                         }
 
                     }
@@ -141,7 +141,7 @@
 }
 
 .card:hover .check-menu {
-    animation: choice 0.3s forwards ease-in ;
+    animation: choice 0.3s forwards linear;
 }
 
 @include choice;
