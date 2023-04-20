@@ -701,9 +701,9 @@ footer ul a {
     max-width: 500px;
   }
   .menu {
-    margin-left: 13%;
-    margin-right: 13%;
-    width: 74%;
+    margin-left: 13.5%;
+    margin-right: 13.5%;
+    width: 73%;
   }
   footer {
     display: flex;
