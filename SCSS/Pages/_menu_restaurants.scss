@@ -146,20 +146,7 @@
 
 @include choice;
 
-.entrees {
-    opacity: 0;
-    animation: menus-in 1s forwards ease-out;
-}
 
-.plats {
-    opacity: 0;
-    animation: menus-in 1s 0.5s forwards ease-out;
-}
-
-.desserts {
-    opacity: 0;
-    animation: menus-in 1s 1s forwards ease-out;
-}
 
 @include menu-in;
 

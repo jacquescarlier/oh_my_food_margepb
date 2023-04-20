@@ -381,30 +381,32 @@ span {
   animation: choice 0.3s forwards ease-in;
 }
 
+/* mixin choice */
 @keyframes choice {
   to {
     margin-right: 0;
   }
 }
+/* mixin menu-in */
 .entrees {
   opacity: 0;
-  animation: menus-in 1s forwards ease-out;
+  animation: menus-in 2s forwards ease-out;
 }
 
 .plats {
   opacity: 0;
-  animation: menus-in 1s 0.5s forwards ease-out;
+  animation: menus-in 2s 1s forwards ease-out;
 }
 
 .desserts {
   opacity: 0;
-  animation: menus-in 1s 1s forwards ease-out;
+  animation: menus-in 2s 2s forwards ease-out;
 }
 
 @keyframes menus-in {
   from {
     opacity: 0;
-    transform: translatey(-20%);
+    transform: translatey(-25%);
   }
   to {
     opacity: 1;
@@ -609,6 +611,7 @@ footer ul a {
   bottom: 13%;
 }
 
+/* mixin fill-heart */
 @keyframes fill-heart {
   0% {
     fill-opacity: 0;
