@@ -1,7 +1,8 @@
 $breakpoint:(
-    "tab": 1024px,
-    "pc": 1240px,
-    "large": 1440px,
+    "tab": 768px,
+    "desktop": 1024px,
+    "desktop-medium": 1240px,
+    "desktop-large": 1440px,
 );
 
 @mixin tab {
@@ -10,14 +11,20 @@ $breakpoint:(
     }
 }
 
-@mixin pc {
-    @media screen and (min-width: map-get($breakpoint, pc)){
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoint, desktop)){
         @content;
     }
 }
 
-@mixin large {
-@media screen and (min-width: map-get($breakpoint, large)){
+@mixin desktop-medium {
+    @media screen and (min-width: map-get($breakpoint, desktop-medium)){
+        @content;
+    }
+}
+
+@mixin desktop-large {
+@media screen and (min-width: map-get($breakpoint, desktop-large)){
     @content;
 }
 }

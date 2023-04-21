@@ -6,7 +6,7 @@ footer {
     background: $font-couleur-location;
     color: $couleur-neutre;
 
-    @include tab {
+    @include desktop {
         @include flex-row ;
         flex-direction: row-reverse;
         padding: 64px 26px 30px 0;
@@ -18,7 +18,7 @@ footer {
             font-size: 18px;
             margin: 22px 10px 16px 25px;
 
-                @include tab {
+                @include desktop {
                     position: absolute;
                 margin-right: 1.85%;
                 text-align: left;
@@ -30,7 +30,7 @@ footer {
             list-style: none;
             margin: 16px 25px 22px 25px;
 
-                @include tab {
+                @include desktop {
                     display: flex;
                     position: relative;
                     right: 10%;
@@ -45,7 +45,7 @@ footer {
                     font-weight: 500;
                     font-size: 16px;
 
-                        @include tab {
+                        @include desktop {
                             @include flex-row;
                             width:200px;  
                             line-height: 16px;
@@ -56,7 +56,7 @@ footer {
                         font-size: 16px;
                         font-weight:400;  
                         
-                            @include tab {
+                            @include desktop {
                                 @include flex-row;
                                 width: 130px;
                                 margin-left: 0px; 
@@ -68,36 +68,3 @@ footer {
                     }
         }
 }
-
-@mixin footer-desktop{
-    footer{
-        @include flex-row ;
-        flex-direction: row-reverse;
-        padding: 64px 26px 30px 0;
-    
-        .logo-footer {
-            position: absolute;
-            margin-right: 1.85%;
-            text-align: left;
-            line-height: 5px;
-        }
-            
-        ul {
-            display: flex;
-            position: relative;
-            right: 10%;
-    
-                .icon-text {    
-                    @include flex-row;
-                    width:200px;  
-                    line-height: 16px;
-                }
-                        
-                .small-span {
-                    @include flex-row;
-                    width: 130px;
-                    margin-left: 0px;    
-                }        
-            }
-        }
-    }

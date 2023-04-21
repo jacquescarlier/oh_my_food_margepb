@@ -7,7 +7,7 @@
     gap: 20px;
     width: 100%;
 
-        @include tab {
+        @include desktop {
             @include flex-row;
             justify-content: left;
             gap: 32px;
@@ -24,7 +24,7 @@
                 box-shadow: 0  4px 15px rgba(0, 0, 0, 0.15);
                 padding:28px 38px 28px 33px ;
 
-                @include tab {
+                @include desktop {
                     box-sizing: border-box; 
                     display: flex;
                     width: auto;
@@ -56,7 +56,7 @@
                     font-weight: 700;
                     text-decoration: none;
 
-                        @include tab {
+                        @include desktop {
                             font-weight: 500;
                         }
                     
@@ -70,7 +70,7 @@
                     margin-right: 20px;
                     line-height: 16px;
 
-                        @include tab {
+                        @include desktop {
                             font-size: 16px;   
                         }
                 }

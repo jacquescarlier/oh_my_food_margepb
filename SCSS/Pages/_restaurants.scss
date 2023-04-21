@@ -6,18 +6,23 @@
     @include flex-column;
 
         @include tab {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        @include desktop {
             justify-content: center;
             padding-top: 30px;
             padding-left: 4%;
             padding-right: 4%;
         }
 
-        @include pc {
+        @include desktop-medium {
             padding-left: 10%;
             padding-right: 10%;
         }
 
-        @include large {
+        @include desktop-large {
             padding-left: 13%;
             padding-right: 13%;
         }
@@ -28,14 +33,14 @@
     margin-top: 30px;
     gap: 18px;
 
-        @include tab {
+        @include desktop {
             gap: 55px;
         }
         .cards-part {
             @include flex-column;
             gap: 18px;
 
-                @include tab {
+                @include desktop {
                     @include flex-row;
                     gap: 100px;
                 }
@@ -49,7 +54,7 @@
                 position: relative;
                @include flex-column;
 
-                @include tab {
+                @include desktop {
                     max-width: 500px;
                 }
             }

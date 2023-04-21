@@ -22,12 +22,12 @@ body{
             width: 100%;
             box-sizing: border-box;   
 
-                @include tab {
+                @include desktop {
                     margin: 0;
                     padding: 0;
                 }
 
-                @include large {
+                @include desktop-large {
                     max-width: 1440px;
                     box-sizing: border-box;   
                     padding: 0 50px;
