@@ -342,8 +342,6 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .buttons .button-fonction {
-    box-sizing: border-box;
-    display: flex;
     width: auto;
   }
 }
@@ -368,12 +366,21 @@ span {
 }
 .buttons .button-fonction span {
   font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .buttons .button-fonction span {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .buttons .button-fonction span {
-    font-weight: 500;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1241px) {
+  .buttons .button-fonction span {
+    font-size: 16px;
   }
 }
 .buttons .button-fonction .fa-color {
@@ -433,8 +440,8 @@ span {
 }
 @media screen and (min-width: 768px) {
   .restaurants {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media screen and (min-width: 1024px) {
