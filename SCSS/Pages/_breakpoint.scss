@@ -1,0 +1,23 @@
+$breakpoint:(
+    "tab": 1024px,
+    "pc": 1240px,
+    "large": 1440px,
+);
+
+@mixin tab {
+    @media screen and (min-width: map-get($breakpoint, tab)){
+        @content;
+    }
+}
+
+@mixin pc {
+    @media screen and (min-width: map-get($breakpoint, pc)){
+        @content;
+    }
+}
+
+@mixin large {
+@media screen and (min-width: map-get($breakpoint, large)){
+    @content;
+}
+}

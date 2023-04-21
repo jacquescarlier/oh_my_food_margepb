@@ -4,15 +4,41 @@
     padding: 54px 20px 64px 20px;
     background: $bg-explorer;
     @include flex-column;
+
+        @include tab {
+            justify-content: center;
+            padding-top: 30px;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+
+        @include pc {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        @include large {
+            padding-left: 13%;
+            padding-right: 13%;
+        }
 }
 
 .restaurants-cards {
     @include flex-column;
     margin-top: 30px;
     gap: 18px;
+
+        @include tab {
+            gap: 55px;
+        }
         .cards-part {
             @include flex-column;
             gap: 18px;
+
+                @include tab {
+                    @include flex-row;
+                    gap: 100px;
+                }
         
             .card {
                 height: 20rem;
@@ -22,6 +48,10 @@
                 box-shadow: 0px 4px 15px rgba(0, 0, 0,0.1);
                 position: relative;
                @include flex-column;
+
+                @include tab {
+                    max-width: 500px;
+                }
             }
             .card img {
                 height: 17rem;
@@ -62,18 +92,7 @@
                         font-weight: 300;
                         margin-top: 5px; 
                     }
-                    /*.coeur {
-                        position: relative;
-                            
-                        .fa-solid{
-                            position: absolute;
-                            top: 20px;
-                        }
-                           
-                    }*/
             }
-            
-        }
-                
+        }             
 }
 

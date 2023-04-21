@@ -1,8 +1,33 @@
 .fonctionnement {
     padding-left: 20px;
     padding-bottom: 68px;
+
+        @include tab {
+            margin-left: 4%;
+            margin-right: 4%;
+            padding: 0 0 50px 0;
+            position: relative;
+            @include flex-column;
+            justify-content: center;
+        }
+
+        @include pc {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        @include large {
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+
         h2 {
             padding-top: 48px;
             margin-bottom: 24px;
+
+                @include tab {
+                    text-align: left;
+                    padding-top: 36px;
+                }
         }
 }

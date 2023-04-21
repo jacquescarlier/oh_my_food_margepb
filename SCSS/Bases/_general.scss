@@ -21,5 +21,16 @@ body{
 .main-container {
             width: 100%;
             box-sizing: border-box;   
+
+                @include tab {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                @include large {
+                    max-width: 1440px;
+                    box-sizing: border-box;   
+                    padding: 0 50px;
+                }
 }
 

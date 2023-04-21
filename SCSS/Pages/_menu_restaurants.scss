@@ -9,6 +9,12 @@
     margin-top: -40px;
     @include flex-column;
 
+        @include tab {
+            margin-left: 13.5%;
+            margin-right: 13.5%;
+            width: 73%;
+        }
+
         h2 {
             font-family: shrikhand;
             font-size: 28px;

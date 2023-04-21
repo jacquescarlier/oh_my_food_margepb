@@ -24,6 +24,19 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+@media screen and (min-width: 1024px) {
+  .main-container {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-container {
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+}
 
 /* éléments texte */
 h1 {
@@ -158,6 +171,26 @@ span {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .restaurants {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurants {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+}
 
 .restaurants-cards {
   display: flex;
@@ -165,10 +198,22 @@ span {
   margin-top: 30px;
   gap: 18px;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants-cards {
+    gap: 55px;
+  }
+}
 .restaurants-cards .cards-part {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants-cards .cards-part {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 .restaurants-cards .cards-part .card {
   height: 20rem;
@@ -179,6 +224,11 @@ span {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants-cards .cards-part .card {
+    max-width: 500px;
+  }
 }
 .restaurants-cards .cards-part .card img {
   height: 17rem;
@@ -210,15 +260,6 @@ span {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  /*.coeur {
-      position: relative;
-
-      .fa-solid{
-          position: absolute;
-          top: 20px;
-      }
-
-  }*/
 }
 .restaurants-cards .cards-part .card-content h3 {
   font-size: 18px;
@@ -261,6 +302,13 @@ span {
   margin-top: -40px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin-left: 13.5%;
+    margin-right: 13.5%;
+    width: 73%;
+  }
 }
 .menu h2 {
   font-family: shrikhand;
@@ -419,6 +467,8 @@ span {
   justify-content: center;
   align-items: center;
   background: #FFFFFF;
+  width: 100%;
+  height: 63px;
 }
 .navbar h1 {
   font-family: shrikhand;
@@ -426,9 +476,22 @@ span {
   font-weight: 400;
   padding: 14px 0px 5px 0px;
 }
+@media screen and (min-width: 1024px) {
+  .navbar h1 {
+    padding: 26px 0px 26px 0px;
+    transform: scale(1.2);
+  }
+}
 .navbar a {
   position: absolute;
   left: 23px;
+}
+@media screen and (min-width: 1024px) {
+  .navbar a {
+    max-width: 1440px;
+    position: relative;
+    left: -41%;
+  }
 }
 
 /* Location */
@@ -465,6 +528,12 @@ span {
   width: 70%;
   font-weight: 700;
 }
+@media screen and (min-width: 1024px) {
+  .explorer-restaurants h2 {
+    font-size: 40px;
+    margin: 30px 0 8px 0;
+  }
+}
 .explorer-restaurants p {
   font-size: 18px;
   line-height: 21px;
@@ -495,14 +564,48 @@ span {
   background: linear-gradient(to top, #ae80e5 0%, #fface8 100%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-width: 1024px) {
+  .button-explore {
+    margin: 18px 0px 30px 0px;
+  }
+}
 
 .fonctionnement {
   padding-left: 20px;
   padding-bottom: 68px;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 0 0 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .fonctionnement {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement {
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+}
 .fonctionnement h2 {
   padding-top: 48px;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement h2 {
+    text-align: left;
+    padding-top: 36px;
+  }
 }
 
 /* Bouton Fonctionnement */
@@ -514,6 +617,14 @@ span {
   gap: 20px;
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 32px;
+  }
+}
 .buttons .button-fonction {
   display: flex;
   flex-wrap: nowrap;
@@ -524,6 +635,17 @@ span {
   border: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   padding: 28px 38px 28px 33px;
+  /*.fa-solid{
+      margin-right: 20px;
+      line-height: 16px;
+  }*/
+}
+@media screen and (min-width: 1024px) {
+  .buttons .button-fonction {
+    box-sizing: border-box;
+    display: flex;
+    width: auto;
+  }
 }
 .buttons .button-fonction:hover {
   background: white;
@@ -549,20 +671,30 @@ span {
   font-weight: 700;
   text-decoration: none;
 }
+@media screen and (min-width: 1024px) {
+  .buttons .button-fonction span {
+    font-weight: 500;
+  }
+}
 .buttons .button-fonction .fa-color {
   color: #9356DC;
-}
-.buttons .button-fonction .fa-solid {
-  margin-right: 20px;
-  line-height: 16px;
 }
 
 /* Footer */
 footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background: #353535;
   color: #F6F6F6;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding: 64px 26px 30px 0;
+  }
 }
 footer .logo-footer {
   font-family: shrikhand;
@@ -570,9 +702,24 @@ footer .logo-footer {
   font-size: 18px;
   margin: 22px 10px 16px 25px;
 }
+@media screen and (min-width: 1024px) {
+  footer .logo-footer {
+    position: absolute;
+    margin-right: 1.85%;
+    text-align: left;
+    line-height: 5px;
+  }
+}
 footer ul {
   list-style: none;
   margin: 16px 25px 22px 25px;
+}
+@media screen and (min-width: 1024px) {
+  footer ul {
+    display: flex;
+    position: relative;
+    right: 10%;
+  }
 }
 footer ul li {
   margin-bottom: 8px;
@@ -584,9 +731,25 @@ footer ul .icon-text {
   font-weight: 500;
   font-size: 16px;
 }
+@media screen and (min-width: 1024px) {
+  footer ul .icon-text {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    line-height: 16px;
+  }
+}
 footer ul .small-span {
   font-size: 16px;
   font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  footer ul .small-span {
+    display: flex;
+    flex-direction: row;
+    width: 130px;
+    margin-left: 0px;
+  }
 }
 footer ul a {
   color: #FFFFFF;
@@ -626,123 +789,6 @@ footer ul a {
     fill-opacity: 1;
     stroke-opacity: 0;
     transform: scale(1.1);
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main-container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .navbar h1 {
-    font-family: shrikhand;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 26px 0px 26px 0px;
-    transform: scale(1.2);
-  }
-  .navbar a {
-    max-width: 1440px;
-    position: relative;
-    left: -41%;
-  }
-  .explorer-restaurants h2 {
-    font-size: 40px;
-    margin: 30px 0 8px 0;
-  }
-  .explorer-restaurants .button-explore {
-    margin: 18px 0px 30px 0px;
-  }
-  .fonctionnement {
-    padding-bottom: 50px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .fonctionnement h2 {
-    text-align: left;
-    padding-top: 36px;
-  }
-  .fonctionnement .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-  }
-  .fonctionnement .buttons .button-fonction {
-    width: auto;
-  }
-  .fonctionnement .buttons .button-fonction .fa-solid {
-    font-size: 16px;
-  }
-  .fonctionnement .buttons .button-fonction span {
-    font-weight: 500;
-  }
-  .restaurants {
-    justify-content: center;
-    padding-top: 30px;
-  }
-  .restaurants .restaurants-cards {
-    gap: 55px;
-  }
-  .restaurants .restaurants-cards .cards-part {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-  }
-  .restaurants .restaurants-cards .cards-part .card {
-    max-width: 500px;
-  }
-  .menu {
-    margin-left: 13.5%;
-    margin-right: 13.5%;
-    width: 73%;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
-    padding: 64px 26px 30px 0;
-  }
-  footer .logo-footer {
-    position: absolute;
-    margin-right: 1.85%;
-    text-align: left;
-    line-height: 5px;
-  }
-  footer ul {
-    display: flex;
-    position: relative;
-    right: 10%;
-  }
-  footer ul .icon-text {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    line-height: 16px;
-  }
-  footer ul .small-span {
-    display: flex;
-    flex-direction: row;
-    width: 130px;
-    margin-left: 0px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  html {
-    background: #EAEAEA;
-  }
-  .main-container {
-    max-width: 1440px;
-    box-sizing: border-box;
-    padding: 0 50px;
   }
 }
 

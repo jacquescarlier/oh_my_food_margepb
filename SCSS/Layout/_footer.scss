@@ -1,40 +1,72 @@
 /* Footer */
 
 footer {
+    width: 100%;
     @include flex-column;
     background: $font-couleur-location;
     color: $couleur-neutre;
 
-    .logo-footer {
-        font-family: shrikhand;
-        font-weight: 400;
-        font-size: 18px;
-        margin: 22px 10px 16px 25px;
+    @include tab {
+        @include flex-row ;
+        flex-direction: row-reverse;
+        padding: 64px 26px 30px 0;
     }
 
-    ul {
-        list-style: none;
-        margin: 16px 25px 22px 25px;
-            li{
-                margin-bottom: 8px;
-            }
+        .logo-footer {
+            font-family: shrikhand;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 22px 10px 16px 25px;
+
+                @include tab {
+                    position: absolute;
+                margin-right: 1.85%;
+                text-align: left;
+                line-height: 5px;
+                }
+        }
+
+        ul {
+            list-style: none;
+            margin: 16px 25px 22px 25px;
+
+                @include tab {
+                    display: flex;
+                    position: relative;
+                    right: 10%;
+                }
+                li{
+                    margin-bottom: 8px;
+                }
         
-            .icon-text {
-                @include flex-items-center;
-                gap: 11px;
-                font-weight: 500;
-                font-size: 16px;
-                }
-           
-            .small-span{
+                .icon-text {
+                    @include flex-items-center;
+                    gap: 11px;
+                    font-weight: 500;
                     font-size: 16px;
-                    font-weight:400;   
-                }
-                a {
-                    color: #FFFFFF;
-                    font-weight: 400;
-                }
-            }
+
+                        @include tab {
+                            @include flex-row;
+                            width:200px;  
+                            line-height: 16px;
+                        }
+                    }
+           
+                .small-span{
+                        font-size: 16px;
+                        font-weight:400;  
+                        
+                            @include tab {
+                                @include flex-row;
+                                width: 130px;
+                                margin-left: 0px; 
+                            }
+                    }
+                    a {
+                        color: #FFFFFF;
+                        font-weight: 400;
+                    }
+        }
 }
 
 @mixin footer-desktop{

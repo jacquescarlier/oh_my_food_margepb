@@ -7,6 +7,12 @@
     gap: 20px;
     width: 100%;
 
+        @include tab {
+            @include flex-row;
+            justify-content: left;
+            gap: 32px;
+        }
+
             .button-fonction{
                 display: flex;
                 flex-wrap: nowrap;
@@ -17,6 +23,12 @@
                 border: none;
                 box-shadow: 0  4px 15px rgba(0, 0, 0, 0.15);
                 padding:28px 38px 28px 33px ;
+
+                @include tab {
+                    box-sizing: border-box; 
+                    display: flex;
+                    width: auto;
+                }
 
                 &:hover {
                     @include highlight;
@@ -43,16 +55,21 @@
                     font-size: 16px;
                     font-weight: 700;
                     text-decoration: none;
+
+                        @include tab {
+                            font-weight: 500;
+                        }
                     
                 }
                 .fa-color {
                     color: $couleur-primaire;
+
                 }
 
-                .fa-solid{
+                /*.fa-solid{
                     margin-right: 20px;
                     line-height: 16px;
-                }
+                }*/
                 
                  
                 }
