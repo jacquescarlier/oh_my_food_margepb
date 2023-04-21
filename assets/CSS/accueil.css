@@ -133,13 +133,13 @@ span {
 
 @keyframes loader-decal {
   0% {
-    transform: scaley(1);
+    transform: scaleY(1);
   }
   50% {
     transform: scale(0.7);
   }
   100% {
-    transform: scaley(0);
+    transform: scaleY(0);
   }
 }
 @keyframes secouer {
@@ -154,14 +154,11 @@ span {
   }
 }
 @keyframes bounce2 {
-  0%, 20%, 80%, 100% {
+  0%, 100% {
     transform: translateY(0);
   }
-  40% {
+  50% {
     transform: translateY(-80px);
-  }
-  60% {
-    transform: translateY(-25px);
   }
 }
 /* Header */
