@@ -30,7 +30,7 @@ body {
     padding: 0;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .main-container {
     max-width: 1440px;
     box-sizing: border-box;
@@ -292,13 +292,13 @@ span {
     justify-content: center;
   }
 }
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1241px) {
   .fonctionnement {
     margin-left: 10%;
     margin-right: 10%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .fonctionnement {
     margin-left: 13%;
     margin-right: 13%;
@@ -436,8 +436,8 @@ span {
 }
 @media screen and (min-width: 768px) {
   .restaurants {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -448,13 +448,13 @@ span {
     padding-right: 4%;
   }
 }
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1241px) {
   .restaurants {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .restaurants {
     padding-left: 13%;
     padding-right: 13%;
