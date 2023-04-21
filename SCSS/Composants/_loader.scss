@@ -8,7 +8,7 @@
   inset: 0;
   z-index: 2;
   opacity: 0.9;
-  animation: loader-decal 0s 3s forwards;
+  animation: loading 0s 3s forwards;
   transform-origin: top;
       
     .regroupement {
@@ -28,7 +28,7 @@
           height: 80vh;
           @include flex-justify-items-center;
           flex-flow: row nowrap;
-          animation: secouer 3s linear infinite;
+          animation: shake 3s linear infinite;
 
             .casserole{
               height: 30px;
@@ -58,12 +58,13 @@
               top: 0px;
               left: -215px;
               z-index: -1;
-              animation: bounce2 3s linear infinite;
+              animation: hop 3s linear infinite;
             }
         }
     }
 }
-@keyframes loader-decal {
+
+@keyframes loading {
   0% {
       transform: scaleY(1);
       
@@ -76,13 +77,13 @@
   }
 }
 
-@keyframes secouer {
+@keyframes shake {
   0%, 50%, 100% { transform: rotate(0deg) scale(1); }
   25% { transform: rotate(20deg) scale(1); }
   75% { transform: rotate(10deg) scale(1); }
 }
 
-@keyframes bounce2 {
+@keyframes hop {
 	0%, 100% {transform: translateY(0);}
 	50% {transform: translateY(-80px);}
 }
