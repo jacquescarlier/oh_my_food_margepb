@@ -6,6 +6,7 @@
     @include flex-column;
 
         @include tab {
+            justify-content: center;
             padding-left: 10%;
             padding-right: 10%;
         }
@@ -13,20 +14,21 @@
         @include desktop {
             justify-content: center;
             padding-top: 30px;
-            padding-left: 4%;
-            padding-right: 4%;
+            /*padding-left: 4%;
+            padding-right: 4%;*/
         }
 
         @include desktop-medium {
-            padding-left: 10%;
-            padding-right: 10%;
+            
+            /*padding-left: 10%;
+            padding-right: 10%;*/
         }
 
         @include desktop-large {
-            padding-left: 13%;
-            padding-right: 13%;
+            /*padding-left: 13%;
+            padding-right: 13%;*/
         }
-}
+
 
 .restaurants-cards {
     @include flex-column;
@@ -37,7 +39,10 @@
             gap: 55px;
         }
         .cards-part {
+            width: 100%;
             @include flex-column;
+            justify-content: space-between;
+
             gap: 18px;
 
                 @include desktop {
@@ -55,7 +60,7 @@
                @include flex-column;
 
                 @include desktop {
-                    max-width: 500px;
+                   /* max-width: 500px;*/
                 }
             }
             .card img {
@@ -99,5 +104,5 @@
                     }
             }
         }             
+    }
 }
-
