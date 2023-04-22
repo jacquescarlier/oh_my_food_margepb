@@ -13,96 +13,79 @@
 
         @include desktop {
             justify-content: center;
-            padding-top: 30px;
-            /*padding-left: 4%;
-            padding-right: 4%;*/
+            padding: 30px 20px 64px 20px;
         }
 
-        @include desktop-medium {
-            
-            /*padding-left: 10%;
-            padding-right: 10%;*/
-        }
+    .restaurants-cards {
+        @include flex-column;
+        margin-top: 30px;
+        gap: 18px;
 
-        @include desktop-large {
-            /*padding-left: 13%;
-            padding-right: 13%;*/
-        }
+            @include desktop {
+                gap: 55px;
+            }
 
-
-.restaurants-cards {
-    @include flex-column;
-    margin-top: 30px;
-    gap: 18px;
-
-        @include desktop {
-            gap: 55px;
-        }
-        .cards-part {
-            width: 100%;
-            @include flex-column;
-            justify-content: space-between;
-
-            gap: 18px;
-
-                @include desktop {
-                    @include flex-row;
-                    gap: 100px;
-                }
-        
-            .card {
-                height: 20rem;
+            .cards-part {
                 width: 100%;
-                background: #FFFFFF;
-                border-radius: 15px;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0,0.1);
-                position: relative;
-               @include flex-column;
-
-                @include desktop {
-                   /* max-width: 500px;*/
-                }
-            }
-            .card img {
-                height: 17rem;
-                width: 100%;
-                border-radius: 15px 15px 0 0;
-                object-fit: cover; 
-                overflow: hidden;
-            }
-
-            .bouton-nouveau {
-                width: 80px;
-                height: 29px;
-                background: $couleur-tertiaire;
-                border-radius: 2px;
-                color: #008766;
-                font-size: 14px;
-                font-weight: 500;
-                @include flex-justify-items-center;
-                position:absolute;
-                right: 5%;
-                top: 5%;
-            }
-                
-            .card-content {
-                height: 33%;
-                padding: 16px 25px 12px 13px;
-                @include flex-items-center; 
-                flex-direction: row;
+                @include flex-column;
                 justify-content: space-between;
-                position: relative;
+                gap: 18px;
+
+                    @include desktop {
+                        @include flex-row;
+                        gap: 100px;
+                    }
+        
+                    .card {
+                        height: 20rem;
+                        width: 100%;
+                        background: #FFFFFF;
+                        border-radius: 15px;
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0,0.1);
+                        position: relative;
+                        @include flex-column;
+                    }
+
+                    .card img {
+                        height: 17rem;
+                        width: 100%;
+                        border-radius: 15px 15px 0 0;
+                        object-fit: cover; 
+                        overflow: hidden;
+                    }
+
+                    .bouton-nouveau {
+                        width: 80px;
+                        height: 29px;
+                        background: $couleur-tertiaire;
+                        border-radius: 2px;
+                        color: #008766;
+                        font-size: 14px;
+                        font-weight: 500;
+                        @include flex-justify-items-center;
+                        position:absolute;
+                        right: 5%;
+                        top: 5%;
+                    }
+                
+                    .card-content {
+                        height: 33%;
+                        padding: 16px 25px 12px 13px;
+                        @include flex-items-center; 
+                        flex-direction: row;
+                        justify-content: space-between;
+                        position: relative;
                     
-                    h3 {
-                        font-size: 18px;
-                        font-weight: 700;
+                            h3 {
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                            span {
+                                font-size: 17px;
+                                font-weight: 300;
+                                margin-top: 5px; 
+                            }
                     }
-                    span {
-                        font-size: 17px;
-                        font-weight: 300;
-                        margin-top: 5px; 
-                    }
-            }
-        }             
+            }             
     }
 }
