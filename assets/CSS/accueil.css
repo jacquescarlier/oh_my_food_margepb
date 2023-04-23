@@ -286,13 +286,11 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
-    padding: 0 20px 50px 20px;
+    padding: 0 10% 50px 10%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1140px;
   }
 }
 .fonctionnement h2 {
@@ -420,16 +418,14 @@ span {
 @media screen and (min-width: 768px) {
   .restaurants {
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
     justify-content: center;
-    padding: 30px 20px 64px 20px;
-    margin: 0 auto;
-    max-width: 1140px;
+    padding: 30px 10% 64px 10%;
   }
 }
 .restaurants .restaurants-cards {
@@ -437,6 +433,11 @@ span {
   flex-direction: column;
   margin-top: 30px;
   gap: 18px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants .restaurants-cards {
+    gap: 25px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards {
@@ -449,6 +450,11 @@ span {
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants .restaurants-cards .cards-part {
+    gap: 25px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards .cards-part {

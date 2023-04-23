@@ -7,15 +7,13 @@
 
         @include tab {
             justify-content: center;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 12%;
+            padding-right: 12%;
         }
 
         @include desktop {
             justify-content: center;
-            padding: 30px 20px 64px 20px; 
-            margin: 0 auto;
-            max-width: 1140px;
+            padding: 30px 10% 64px 10%;    
         }
 
     .restaurants-cards {
@@ -23,6 +21,9 @@
         margin-top: 30px;
         gap: 18px;
 
+            @include tab {
+                gap: 25px;
+            }
             @include desktop {
                 gap: 55px;
             }
@@ -32,6 +33,10 @@
                 @include flex-column;
                 justify-content: space-between;
                 gap: 18px;
+
+                    @include tab {
+                        gap: 25px;
+                    }
 
                     @include desktop {
                         @include flex-row;
