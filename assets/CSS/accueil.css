@@ -458,7 +458,7 @@ span {
   }
 }
 .restaurants .restaurants-cards .cards-part .card {
-  height: 20rem;
+  height: 251px;
   width: 100%;
   background: #FFFFFF;
   border-radius: 15px;
@@ -469,12 +469,11 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards .cards-part .card {
-    height: 251px;
     width: 490px;
   }
 }
 .restaurants .restaurants-cards .cards-part .card img {
-  height: 17rem;
+  height: 174px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;

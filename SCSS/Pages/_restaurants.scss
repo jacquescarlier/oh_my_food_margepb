@@ -39,7 +39,7 @@
                     }
         
                     .card {
-                        height: 20rem;
+                        height: 251px;
                         width: 100%;
                         background: #FFFFFF;
                         border-radius: 15px;
@@ -48,13 +48,12 @@
                         @include flex-column;
 
                             @include desktop {
-                                height: 251px;
                                 width: 490px;
                             }
                     }
 
                     .card img {
-                        height: 17rem;
+                        height: 174px;
                         width: 100%;
                         border-radius: 15px 15px 0 0;
                         object-fit: cover; 
