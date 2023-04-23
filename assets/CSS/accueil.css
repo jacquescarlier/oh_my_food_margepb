@@ -291,6 +291,8 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1024px;
   }
 }
 .fonctionnement h2 {
@@ -426,6 +428,8 @@ span {
   .restaurants {
     justify-content: center;
     padding: 30px 20px 64px 20px;
+    margin: 0 auto;
+    max-width: 1024px;
   }
 }
 .restaurants .restaurants-cards {
@@ -436,7 +440,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards {
-    gap: 55px;
+    gap: 50px;
   }
 }
 .restaurants .restaurants-cards .cards-part {
@@ -450,7 +454,7 @@ span {
   .restaurants .restaurants-cards .cards-part {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 96px;
   }
 }
 .restaurants .restaurants-cards .cards-part .card {
@@ -463,12 +467,23 @@ span {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurants-cards .cards-part .card {
+    height: 251px;
+    width: 490px;
+  }
+}
 .restaurants .restaurants-cards .cards-part .card img {
   height: 17rem;
   width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurants-cards .cards-part .card img {
+    height: 174px;
+  }
 }
 .restaurants .restaurants-cards .cards-part .bouton-nouveau {
   width: 80px;
