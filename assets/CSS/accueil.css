@@ -292,7 +292,7 @@ span {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1140px;
   }
 }
 .fonctionnement h2 {
@@ -429,7 +429,7 @@ span {
     justify-content: center;
     padding: 30px 20px 64px 20px;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 1140px;
   }
 }
 .restaurants .restaurants-cards {
@@ -440,7 +440,7 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .restaurants .restaurants-cards {
-    gap: 50px;
+    gap: 55px;
   }
 }
 .restaurants .restaurants-cards .cards-part {
@@ -478,11 +478,6 @@ span {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   overflow: hidden;
-}
-@media screen and (min-width: 1024px) {
-  .restaurants .restaurants-cards .cards-part .card img {
-    height: 174px;
-  }
 }
 .restaurants .restaurants-cards .cards-part .bouton-nouveau {
   width: 80px;
