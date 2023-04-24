@@ -170,16 +170,21 @@ span {
   width: 100%;
   height: 63px;
 }
+@media screen and (min-width: 1024px) {
+  .navbar {
+    width: 100%;
+    height: 96px;
+  }
+}
 .navbar h1 {
   font-family: shrikhand;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 400;
   padding: 14px 0px 5px 0px;
 }
 @media screen and (min-width: 1024px) {
   .navbar h1 {
-    padding: 26px 0px 26px 0px;
-    transform: scale(1.2);
+    padding: 23px 0px 23px 0px;
   }
 }
 .navbar a {
@@ -190,7 +195,7 @@ span {
   .navbar a {
     max-width: 1440px;
     position: relative;
-    left: -41%;
+    left: -38%;
   }
 }
 .navbar a .fa-solid {
@@ -257,7 +262,6 @@ span {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 57px;
-  margin-top: 27px;
   padding: 13px 18.75px;
   position: relative;
   cursor: pointer;
@@ -275,8 +279,7 @@ span {
 }
 
 .fonctionnement {
-  padding-left: 20px;
-  padding-bottom: 68px;
+  padding: 0 20px 68px 20px;
 }
 @media screen and (min-width: 768px) {
   .fonctionnement {
@@ -286,16 +289,21 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
-    padding: 0 10% 50px 10%;
+    padding: 0 2% 50px 2%;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+  }
+}
+@media screen and (min-width: 1240px) {
+  .fonctionnement {
+    padding: 0 10% 50px 10%;
   }
 }
 .fonctionnement h2 {
   padding-top: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement h2 {
@@ -355,22 +363,12 @@ span {
   font-size: 16px;
   font-weight: 500;
 }
-@media screen and (min-width: 768px) {
-  .buttons .button-fonction span {
-    font-size: 16px;
-  }
-}
 .buttons .button-fonction .fa-color {
   color: #9356DC;
 }
 .buttons .button-fonction .fa-solid {
   margin-right: 20px;
   line-height: 16px;
-}
-@media screen and (min-width: 1024px) {
-  .buttons .button-fonction .fa-solid {
-    font-size: 16px;
-  }
 }
 
 .coeur svg {
@@ -387,8 +385,8 @@ span {
 
 .restaurant-cards .cards-part .card-content .coeur {
   position: absolute;
-  right: 5%;
-  bottom: 13%;
+  right: 13%;
+  bottom: 7.3%;
 }
 
 /* mixin fill-heart */
@@ -410,7 +408,7 @@ span {
 }
 /* Restaurants */
 .restaurants {
-  padding: 54px 20px 64px 20px;
+  padding: 54px 17px 66px 18px;
   background: #F7F7F7;
   display: flex;
   flex-direction: column;
@@ -425,7 +423,12 @@ span {
 @media screen and (min-width: 1024px) {
   .restaurants {
     justify-content: center;
-    padding: 30px 10% 64px 10%;
+    padding: 30px 2% 64px 2%;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .restaurants {
+    padding: 0 10% 50px 10%;
   }
 }
 .restaurants .restaurants-cards {
@@ -498,7 +501,7 @@ span {
   align-items: center;
   position: absolute;
   right: 5%;
-  top: 5%;
+  top: 3.5%;
 }
 .restaurants .restaurants-cards .cards-part .card-content {
   height: 33%;
@@ -547,7 +550,7 @@ span {
   width: 100%;
   background: #F7F7F7;
   border-radius: 45px 45px 0px 0px;
-  margin-top: -40px;
+  margin-top: -60px;
   display: flex;
   flex-direction: column;
 }
@@ -569,7 +572,7 @@ span {
   font-family: shrikhand;
   font-size: 28px;
   font-weight: 400;
-  padding-left: 17px;
+  /*padding-left: 17px;*/
 }
 .menu h4 {
   font-size: 18px;
@@ -580,6 +583,7 @@ span {
 }
 .menu .menu-title {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 32px;
   gap: 24px;
@@ -728,6 +732,7 @@ footer {
   footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     flex-direction: row-reverse;
     padding: 64px 26px 30px 0;
   }
@@ -741,29 +746,30 @@ footer .logo-footer {
 @media screen and (min-width: 1024px) {
   footer .logo-footer {
     position: absolute;
-    margin-right: 1.85%;
-    text-align: left;
-    line-height: 5px;
+    margin: 0px Opx 0px 16px;
   }
 }
 footer ul {
   list-style: none;
-  margin: 16px 25px 22px 25px;
+  margin: 0px 25px 15px 25px;
 }
 @media screen and (min-width: 1024px) {
   footer ul {
+    margin-bottom: 0px;
     display: flex;
     position: relative;
     right: 10%;
   }
 }
 footer ul li {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 footer ul .icon-text {
   display: flex;
   align-items: center;
   gap: 11px;
+}
+footer ul .icon-text span {
   font-weight: 500;
   font-size: 16px;
 }
@@ -787,8 +793,9 @@ footer ul .small-span {
     margin-left: 0px;
   }
 }
-footer ul a {
+footer ul .small-span a {
   color: #FFFFFF;
+  font-size: 16px;
   font-weight: 400;
 }
 

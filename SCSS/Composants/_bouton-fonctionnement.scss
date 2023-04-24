@@ -24,48 +24,39 @@
                 box-shadow: 0  4px 15px rgba(0, 0, 0, 0.15);
                 padding:28px 38px 28px 33px ;
 
-                &:hover {
-                    @include highlight;
-                    box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.25);
-                } 
+                    &:hover {
+                        @include highlight;
+                        box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.25);
+                    } 
 
-                .nombre{
-                    display: flex;
-                    height: 23px;
-                    width: 23px;
-                    background-color: $couleur-primaire;
-                    border-radius: 50%;
-                    color: $couleur-neutre;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 23px;
-                    padding-left: 7px;
-                    position:relative ;
-                    top: -4px;
-                    left: -42px;
-                }        
+                    .nombre{
+                        display: flex;
+                        height: 23px;
+                        width: 23px;
+                        background-color: $couleur-primaire;
+                        border-radius: 50%;
+                        color: $couleur-neutre;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 23px;
+                        padding-left: 7px;
+                        position:relative ;
+                        top: -4px;
+                        left: -42px;
+                    }        
 
-                span{
-                    font-size: 16px;
-                    font-weight: 500;
-                    
+                    span{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
 
-                        @include tab {
-                            font-size: 16px;
-                        }    
-                }
+                    .fa-color {
+                        color: $couleur-primaire;
+                    }
 
-                .fa-color {
-                    color: $couleur-primaire;
-                }
-
-                .fa-solid{
-                    margin-right: 20px;
-                    line-height: 16px;
-
-                        @include desktop {
-                            font-size: 16px;   
-                        }
-                }  
+                    .fa-solid{
+                        margin-right: 20px;
+                        line-height: 16px;
+                    }  
             }
 }

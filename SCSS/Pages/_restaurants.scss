@@ -1,7 +1,7 @@
 /* Restaurants */ 
 
 .restaurants {
-    padding: 54px 20px 64px 20px;
+    padding: 54px 17px 66px 18px;
     background: $bg-explorer;
     @include flex-column;
 
@@ -13,7 +13,11 @@
 
         @include desktop {
             justify-content: center;
-            padding: 30px 10% 64px 10%;    
+            padding: 30px 2% 64px 2%;    
+        }
+
+        @include desktop-medium {
+            padding: 0 10% 50px 10%;
         }
 
     .restaurants-cards {
@@ -76,7 +80,7 @@
                         @include flex-justify-items-center;
                         position:absolute;
                         right: 5%;
-                        top: 5%;
+                        top: 3.5%;
                     }
                 
                     .card-content {

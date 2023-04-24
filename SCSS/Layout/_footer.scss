@@ -8,7 +8,9 @@ footer {
 
     @include desktop {
         @include flex-row ;
+        align-items: center;
         flex-direction: row-reverse;
+
         padding: 64px 26px 30px 0;
     }
 
@@ -19,31 +21,33 @@ footer {
             margin: 22px 10px 16px 25px;
 
                 @include desktop {
-                    position: absolute;
-                margin-right: 1.85%;
-                text-align: left;
-                line-height: 5px;
+                    position: absolute;  
+                    margin: 0px Opx 0px 16px;
                 }
         }
 
         ul {
             list-style: none;
-            margin: 16px 25px 22px 25px;
+            margin: 0px 25px 15px 25px;
 
                 @include desktop {
+                    margin-bottom: 0px;
                     display: flex;
                     position: relative;
                     right: 10%;
                 }
                 li{
-                    margin-bottom: 8px;
+                    margin-bottom: 7px;
                 }
         
                 .icon-text {
                     @include flex-items-center;
                     gap: 11px;
-                    font-weight: 500;
-                    font-size: 16px;
+
+                        span{
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
 
                         @include desktop {
                             @include flex-row;
@@ -61,10 +65,12 @@ footer {
                                 width: 130px;
                                 margin-left: 0px; 
                             }
-                    }
-                    a {
-                        color: #FFFFFF;
-                        font-weight: 400;
-                    }
+
+                            a {
+                                color: #FFFFFF;
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+                }
         }
 }
