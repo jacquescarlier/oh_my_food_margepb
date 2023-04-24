@@ -340,10 +340,6 @@ span {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   padding: 28px 38px 28px 33px;
 }
-.buttons .button-fonction:hover {
-  background: white;
-  box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.25);
-}
 .buttons .button-fonction .nombre {
   display: flex;
   height: 23px;
