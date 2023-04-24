@@ -746,7 +746,8 @@ footer .logo-footer {
 @media screen and (min-width: 1024px) {
   footer .logo-footer {
     position: absolute;
-    margin: 0px Opx 0px 16px;
+    margin: 0px 0px 16px 16px;
+    /* align-items: first baseline;*/
   }
 }
 footer ul {

@@ -21,8 +21,10 @@ footer {
             margin: 22px 10px 16px 25px;
 
                 @include desktop {
-                    position: absolute;  
-                    margin: 0px Opx 0px 16px;
+                    position: absolute;
+                    margin: 0px 0px 16px 16px;
+                
+                   /* align-items: first baseline;*/
                 }
         }
 
