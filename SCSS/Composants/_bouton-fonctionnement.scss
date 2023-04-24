@@ -24,6 +24,10 @@
                 box-shadow: 0  4px 15px rgba(0, 0, 0, 0.15);
                 padding:28px 38px 28px 33px ;
 
+                    &:hover {
+                        @include highlight;
+                    }
+
                     .nombre{
                         display: flex;
                         height: 23px;
