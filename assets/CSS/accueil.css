@@ -281,7 +281,7 @@ span {
 .fonctionnement {
   padding: 0 20px 68px 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .fonctionnement {
     padding-left: 12%;
     padding-right: 12%;
@@ -409,7 +409,7 @@ span {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .restaurants {
     justify-content: center;
     padding-left: 12%;
@@ -424,7 +424,7 @@ span {
 }
 @media screen and (min-width: 1240px) {
   .restaurants {
-    padding: 0 10% 50px 10%;
+    padding: 30px 10% 50px 10%;
   }
 }
 .restaurants .restaurants-cards {
@@ -433,7 +433,7 @@ span {
   margin-top: 30px;
   gap: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .restaurants .restaurants-cards {
     gap: 25px;
   }
@@ -450,7 +450,7 @@ span {
   justify-content: space-between;
   gap: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .restaurants .restaurants-cards .cards-part {
     gap: 25px;
   }
@@ -459,6 +459,7 @@ span {
   .restaurants .restaurants-cards .cards-part {
     display: flex;
     flex-direction: row;
+    justify-content: left;
     gap: 96px;
   }
 }
@@ -550,7 +551,7 @@ span {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .menu {
     margin-left: 7%;
     margin-right: 7%;

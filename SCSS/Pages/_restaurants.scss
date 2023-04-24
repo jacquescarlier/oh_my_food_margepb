@@ -17,7 +17,7 @@
         }
 
         @include desktop-medium {
-            padding: 0 10% 50px 10%;
+            padding: 30px 10% 50px 10%;
         }
 
     .restaurants-cards {
@@ -44,6 +44,7 @@
 
                     @include desktop {
                         @include flex-row;
+                        justify-content: left;
                         gap: 96px;
                     }
         
