@@ -19,6 +19,14 @@ body {
   margin: 0px;
   padding: 0;
 }
+@media screen and (min-width: 1441px) {
+  body {
+    width: 1441px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
 
 .main-container {
   width: 100%;
@@ -28,13 +36,6 @@ body {
   .main-container {
     margin: 0;
     padding: 0;
-  }
-}
-@media screen and (min-width: 1441px) {
-  .main-container {
-    width: 1441px;
-    box-sizing: border-box;
-    padding: 0 50px;
   }
 }
 
