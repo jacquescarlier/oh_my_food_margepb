@@ -220,7 +220,7 @@ span {
   color: #353535;
 }
 
-/* Explorer restaurants */
+/* Section explorer restaurants */
 .explorer-restaurants {
   display: flex;
   flex-direction: column;
@@ -247,7 +247,7 @@ span {
   margin: 10px 20px 0px 20px;
 }
 
-/* Bouton Explorer */
+/* Bouton Section Explorer */
 .button-explore {
   width: 220px;
   height: 50px;
@@ -277,6 +277,7 @@ span {
   }
 }
 
+/* Section fonctionnement */
 .fonctionnement {
   padding: 0 20px 68px 20px;
 }
@@ -292,7 +293,6 @@ span {
     position: relative;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
   }
 }
 @media screen and (min-width: 1240px) {
@@ -311,7 +311,7 @@ span {
   }
 }
 
-/* Bouton Fonctionnement */
+/* Bouton Section Fonctionnement */
 .buttons {
   display: flex;
   align-items: center;
@@ -370,6 +370,7 @@ span {
   line-height: 16px;
 }
 
+/* Coeur  */
 .coeur svg {
   color: black;
   fill: url(#gradient);
@@ -405,7 +406,7 @@ span {
     transform: scale(1.1);
   }
 }
-/* Restaurants */
+/* Accueil restaurants */
 .restaurants {
   padding: 54px 17px 66px 18px;
   background: #F7F7F7;
@@ -545,7 +546,7 @@ span {
   background-image: url(../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
-/* Menu */
+/* Menu restaurants */
 .menu {
   width: 100%;
   background: #F7F7F7;
@@ -572,7 +573,6 @@ span {
   font-family: shrikhand;
   font-size: 28px;
   font-weight: 400;
-  /*padding-left: 17px;*/
 }
 .menu h4 {
   font-size: 18px;
