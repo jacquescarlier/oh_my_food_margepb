@@ -32,6 +32,7 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .main-container {
+    width: 1441px;
     box-sizing: border-box;
     padding: 0 50px;
   }

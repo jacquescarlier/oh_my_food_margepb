@@ -28,6 +28,7 @@ body{
                 }
 
                 @include desktop-large {
+                    width: 1441px;
                     box-sizing: border-box;   
                     padding: 0 50px;
                 }
