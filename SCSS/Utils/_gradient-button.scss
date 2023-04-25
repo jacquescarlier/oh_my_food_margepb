@@ -3,7 +3,7 @@
     background: linear-gradient(to top, $couleur-primaire 0% ,  $couleur-secondaire 100%);
 }
 @mixin highlight{
-    background: lighten($bg-explorer, 5%);
+    background: lighten($bg-explorer, 1%);
 }
 
 @mixin gradient-light{

@@ -30,9 +30,8 @@ body {
     padding: 0;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .main-container {
-    max-width: 1440px;
     box-sizing: border-box;
     padding: 0 50px;
   }
@@ -193,7 +192,6 @@ span {
 }
 @media screen and (min-width: 1024px) {
   .navbar a {
-    max-width: 1440px;
     position: relative;
     left: -38%;
   }
@@ -271,7 +269,7 @@ span {
 }
 .button-explore:hover {
   background: linear-gradient(to top, #ae80e5 0%, #fface8 100%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1024px) {
   .button-explore {
@@ -342,7 +340,8 @@ span {
   padding: 28px 38px 28px 33px;
 }
 .buttons .button-fonction:hover {
-  background: white;
+  background: #fafafa;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .buttons .button-fonction .nombre {
   display: flex;
@@ -748,7 +747,6 @@ footer .logo-footer {
   footer .logo-footer {
     position: absolute;
     margin: 0px 0px 16px 16px;
-    /* align-items: first baseline;*/
   }
 }
 footer ul {
