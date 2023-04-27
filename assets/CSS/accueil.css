@@ -268,10 +268,12 @@ span {
   cursor: pointer;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 200ms linear;
 }
 .button-explore:hover {
   background: linear-gradient(to top, #ae80e5 0%, #fface8 100%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
 }
 @media screen and (min-width: 1024px) {
   .button-explore {
@@ -626,6 +628,9 @@ span {
   justify-content: space-between;
   overflow: hidden;
 }
+.menu .menus-entrees-plats-desserts .section-menu-cards .card:hover .check-menu {
+  margin-right: 0px;
+}
 .menu .menus-entrees-plats-desserts .section-menu-cards .card .card-content {
   padding: 12px 16px 12px 15px;
   display: flex;
@@ -680,22 +685,13 @@ span {
   background: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   margin-right: -60px;
+  transition: all 0.3s ease-out;
 }
 .menu .button-explore {
   align-self: center;
   margin-bottom: 40px;
 }
 
-.card:hover .check-menu {
-  animation: choice 0.3s forwards linear;
-}
-
-/* mixin choice */
-@keyframes choice {
-  to {
-    margin-right: 0;
-  }
-}
 /* mixin menu-in */
 .entrees {
   opacity: 0;

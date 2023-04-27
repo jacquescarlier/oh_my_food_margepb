@@ -76,7 +76,11 @@
                         @include flex-row;
                         justify-content: space-between;
                         overflow: hidden;
-                       
+
+                        &:hover .check-menu{
+                            margin-right: 0px;
+                        }
+                      
                             .card-content {
                                 padding: 12px 16px 12px 15px;
                                 @include flex-column;
@@ -132,6 +136,7 @@
                                 background: $couleur-tertiaire;
                                 border-radius: 0px 15px 15px 0px;
                                 margin-right: -60px;
+                                transition: all 0.3s ease-out;
                             }
                     }
                 }
@@ -142,12 +147,6 @@
         margin-bottom: 40px;
     }
 }
-
-.card:hover .check-menu {
-    animation: choice 0.3s forwards linear;
-}
-
-@include choice;
 
 @include menu-in;
 
